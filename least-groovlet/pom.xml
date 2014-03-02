@@ -9,6 +9,7 @@
     <url>http://maven.apache.org</url>
     <dependencies>
 
+        <!-- 也包含了asm antlr -->
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
@@ -28,6 +29,7 @@
 
         <plugins>
             <!-- maven-compiler-plugin来编译groovy java -->
+            <!-- 实际上这个工程里不需要这个插件,因为groovy源文件是在运行时编译的 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

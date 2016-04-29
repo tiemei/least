@@ -1,0 +1,76 @@
+[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'dependency'.
+[INFO] org.grails: checking for updates from central
+[INFO] org.apache.maven.plugins: checking for updates from central
+[INFO] org.codehaus.mojo: checking for updates from central
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring
+[INFO]    task-segment: [dependency:tree]
+[INFO] ------------------------------------------------------------------------
+[INFO] [dependency:tree {execution: default-cli}]
+[INFO] com.tiemei.demo.least:spring:war:1.0-SNAPSHOT
+[INFO] +- junit:junit:jar:3.8.1:test (scope not updated to compile)
+[INFO] +- org.springframework:spring-webmvc:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-context:jar:3.2.0.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-aop:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-core:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-web:jar:3.2.0.RELEASE:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- org.springframework:spring-expression:jar:3.2.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-beans:jar:3.2.0.RELEASE:compile
+[INFO] +- org.springframework:spring-context-support:jar:3.2.0.RELEASE:compile
+[INFO] +- javax.servlet:servlet-api:jar:3.0:provided
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.0.9:runtime
+[INFO] |  \- ch.qos.logback:logback-core:jar:1.0.9:runtime
+[INFO] +- commons-logging:commons-logging:jar:1.1.1:provided (scope not updated to compile)
+[INFO] +- org.jruby:jruby:jar:1.7.8:compile
+[INFO] |  +- org.jruby:jruby-core:jar:1.7.8:compile
+[INFO] |  |  +- org.ow2.asm:asm:jar:4.0:compile
+[INFO] |  |  +- org.ow2.asm:asm-commons:jar:4.0:compile
+[INFO] |  |  |  \- org.ow2.asm:asm-tree:jar:4.0:compile
+[INFO] |  |  +- org.ow2.asm:asm-analysis:jar:4.0:compile
+[INFO] |  |  +- org.ow2.asm:asm-util:jar:4.0:compile
+[INFO] |  |  +- org.jruby.joni:joni:jar:2.0.0:compile
+[INFO] |  |  +- com.github.jnr:jnr-netdb:jar:1.1.2:compile
+[INFO] |  |  +- com.github.jnr:jnr-enxio:jar:0.4:compile
+[INFO] |  |  +- com.github.jnr:jnr-x86asm:jar:1.0.2:compile
+[INFO] |  |  +- com.github.jnr:jnr-unixsocket:jar:0.3:compile
+[INFO] |  |  +- com.github.jnr:jnr-posix:jar:3.0.1:compile
+[INFO] |  |  +- org.jruby.extras:bytelist:jar:1.0.10:compile
+[INFO] |  |  +- com.github.jnr:jnr-constants:jar:0.8.5:compile
+[INFO] |  |  +- org.jruby.jcodings:jcodings:jar:1.0.10:compile
+[INFO] |  |  +- com.github.jnr:jnr-ffi:jar:1.0.7:compile
+[INFO] |  |  +- com.github.jnr:jffi:jar:1.2.7:compile
+[INFO] |  |  +- com.github.jnr:jffi:jar:native:1.2.7:compile
+[INFO] |  |  +- org.yaml:snakeyaml:jar:1.13:compile
+[INFO] |  |  +- com.jcraft:jzlib:jar:1.1.2:compile
+[INFO] |  |  +- com.headius:invokebinder:jar:1.2:compile
+[INFO] |  |  +- com.martiansoftware:nailgun-server:jar:0.9.1:compile
+[INFO] |  |  +- org.jruby:yecht:jar:1.0:compile
+[INFO] |  |  \- joda-time:joda-time:jar:2.3:compile
+[INFO] |  \- org.jruby:jruby-stdlib:jar:1.7.8:compile
+[INFO] +- org.codehaus.groovy:groovy-all:jar:2.0.5:compile
+[INFO] +- org.codehaus.groovy.maven.runtime:gmaven-runtime-default:jar:1.0-rc-3:compile
+[INFO] |  \- org.codehaus.groovy.maven.runtime:gmaven-runtime-1.5:jar:1.0-rc-3:compile
+[INFO] |     +- org.codehaus.groovy.maven.feature:gmaven-feature-support:jar:1.0-rc-3:compile
+[INFO] |     |  \- org.codehaus.groovy.maven.feature:gmaven-feature-api:jar:1.0-rc-3:compile
+[INFO] |     +- org.codehaus.groovy.maven.runtime:gmaven-runtime-support:jar:1.0-rc-3:compile
+[INFO] |     |  +- org.codehaus.groovy.maven.runtime:gmaven-runtime-api:jar:1.0-rc-3:compile
+[INFO] |     |  +- org.codehaus.groovy.maven:gmaven-common:jar:1.0-rc-3:compile
+[INFO] |     |  +- org.codehaus.plexus:plexus-utils:jar:1.5.5:compile
+[INFO] |     |  \- com.thoughtworks.qdox:qdox:jar:1.6.3:compile
+[INFO] |     +- org.codehaus.groovy:groovy-all-minimal:jar:1.5.6:compile
+[INFO] |     +- org.apache.ant:ant:jar:1.7.1:compile
+[INFO] |     |  \- org.apache.ant:ant-launcher:jar:1.7.1:compile
+[INFO] |     \- jline:jline:jar:0.9.94:compile
+[INFO] \- com.github.httl:httl-springmvc:jar:1.0.11:compile
+[INFO]    \- com.github.httl:httl:jar:1.0.11:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4 seconds
+[INFO] Finished at: Sun Sep 14 23:19:46 CST 2014
+[INFO] Final Memory: 19M/81M
+[INFO] ------------------------------------------------------------------------

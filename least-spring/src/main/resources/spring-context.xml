@@ -32,17 +32,41 @@
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp" />
+        <property name="order" value="10" />
     </bean>
+
+    <bean id="httlViewResolver" class="httl.web.springmvc.HttlViewResolver">
+        <property name="contentType" value="text/html; charset=UTF-8" />
+        <property name="order" value="1" />
+    </bean>
+
+
+    <!-- ==================== aop ================= -->
+    <bean id="leastMethodBefore" class="com.tiemei.demo.least.spring.aop.LeastMethodBefore" />
+    <bean id="leastMethodAround" class="com.tiemei.demo.least.spring.aop.LeastMethodAround" />
+    <bean id="helloServiceProxy"
+          class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="helloService" />
+        <property name="interceptorNames">
+            <list>
+                <value>leastMethodBefore</value>
+                <value>leastMethodAround</value>
+            </list>
+        </property>
+    </bean>
+    <!-- ==================== aop ================= -->
+
 
 
     <!-- dynamic lanaguage -->
     <!--<lang:groovy id="messenger" script-source="classpath:src/main/groovy/com.tiemei.demo.least.spring/GroovyMessenger.groovy">-->
         <!--<lang:property name="name" value="first goory implement." />-->
     <!--</lang:groovy>-->
-    
+
+    <!--
     <bean id="messenger" class="GroovyMessenger">
         <property name="name" value="here is compiled groovy class." />
-    </bean>
+    </bean>-->
 
 
 

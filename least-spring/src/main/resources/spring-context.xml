@@ -69,5 +69,8 @@
     </bean>-->
 
 
+    <!-- ============ properties ============ -->
+    <context:property-placeholder location="classpath:foo.properties" />
+    <!-- ============ properties ============ -->
 
 </beans>

@@ -3,3 +3,4 @@
 hsf.configuration
 *.iml
 *.log
+least-*/target/*

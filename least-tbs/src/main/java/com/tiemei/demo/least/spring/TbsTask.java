@@ -36,6 +36,7 @@ public class TbsTask implements IScheduleTaskDealSingle<Task> {
     @Override
     public boolean execute(Task task, String ownSign) throws Exception {
         System.err.println("execute task:" + task.getId());
+        Thread.sleep(2000);
         return true;
     }
 }

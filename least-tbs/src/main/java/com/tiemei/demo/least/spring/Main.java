@@ -23,7 +23,7 @@ public class Main {
         TBScheduleManagerFactory scheduleManagerFactory = new TBScheduleManagerFactory();
         Properties p = new Properties();
         p.put("zkConnectString", "192.168.99.100:2181");
-        p.put("rootPath", "/taobao-pamirs-schedule/huijin");
+        p.put("rootPath", "/app1");
         p.put("zkSessionTimeout", "60000");
         p.put("userName", "user");
         p.put("password", "pwd");
